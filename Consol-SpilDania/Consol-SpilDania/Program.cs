@@ -11,8 +11,7 @@ namespace Consol_SpilDania
         public int IndextLoop = 0;
         public bool NewUser = true; 
         static void Main(string[] args)
-        {
-            
+        {  
             Console.WriteLine("Hello, World!, enter your name:");
             String name = Console.ReadLine() ?? "Unknown";
             ConsoleKeyInfo startKey = Console.ReadKey(true);
@@ -32,6 +31,7 @@ namespace Consol_SpilDania
                     {
                         program.InBattle(program.isInBattle, program.IndextLoop);
                         program.NewUser = false;
+                            break;
                     }
                     break;      
                 }
